@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Package, DollarSign, Truck, FileCheck, Lock } from "lucide-react";
 
+
+
 const About = () => {
   const features = [
     {
@@ -38,8 +40,12 @@ const About = () => {
             Sobre a Plataforma
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            O Corredor Lobito Digital integra <span className="font-semibold text-primary">produtos, serviços, preços, logística e conformidade fiscal</span> em um só ecossistema.
+          A Plataforma Digital Corredor do Lobito  conecta <span className="font-semibold text-primary">empresas, produtores,vendedores, Compradores Corporativos, clientes, operadores, despachantes, governos</span>.
           </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          A plataforma integra <span className="font-semibold text-primary">produtos, serviços, preços, logística e  conformidade fiscal</span> em um só ecossistema.
+          </p>
+         
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -62,8 +68,10 @@ const About = () => {
           ))}
         </div>
 
+        
+
         {/* Marketplace Access Notice */}
-        <div className="bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/20 rounded-2xl p-8 text-center">
+        <div className="bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/20 rounded-2xl p-8 text-center mt-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Lock className="w-6 h-6 text-primary" />
             <h3 className="text-2xl font-bold text-foreground">
@@ -71,8 +79,8 @@ const About = () => {
             </h3>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            O <span className="font-semibold text-primary">marketplace</span> é acessível apenas para{" "}
-            <span className="font-semibold text-secondary">utilizadores autenticados</span> (clientes, operadores e governos).
+            <span className="font-semibold text-primary">A Plataforma </span> é acessada por {" "}
+            <span className="font-semibold text-secondary">utilizadores autenticados</span> (empresas, produtores, clientes, operadores, despachantes, governos).
           </p>
         </div>
       </div>

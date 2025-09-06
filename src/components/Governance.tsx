@@ -1,36 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Shield, Building, Eye, Users } from "lucide-react";
+import CountryFlags from "./CountryFlags";
 
 const Governance = () => {
-  const countries = [
-    { name: "Angola", flag: "🇦🇴" },
-    { name: "República Democrática do Congo", flag: "🇨🇩" },
-    { name: "Zâmbia", flag: "🇿🇲" },
-    { name: "Tanzânia", flag: "🇹🇿" }
-  ];
-
-  const partners = [
-    {
-      icon: <Shield className="w-8 h-8 text-primary" />,
-      name: "Nossa Seguros",
-      role: "Cobertura Institucional",
-      description: "Seguros especializados para operações governamentais"
-    },
-    {
-      icon: <Building className="w-8 h-8 text-secondary" />,
-      name: "BAI S.A",
-      role: "Parceiro Financeiro",
-      description: "Processamento seguro de transações internacionais"
-    },
-    {
-      icon: <Eye className="w-8 h-8 text-accent" />,
-      name: "AI Auditor",
-      role: "Monitoramento Contínuo",
-      description: "Auditoria automatizada com notificações em tempo real"
-    }
-  ];
-
+ 
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -48,46 +22,10 @@ const Governance = () => {
           </p>
         </div>
 
-        {/* Countries Representation */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-foreground mb-8">
-            União dos Países Membros
-          </h3>
-          <div className="flex justify-center items-center gap-8 flex-wrap">
-            {countries.map((country, index) => (
-              <div key={index} className="text-center group">
-                <div className="text-6xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
-                  {country.flag}
-                </div>
-                <p className="font-semibold text-foreground">{country.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Partners */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {partners.map((partner, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-gradient-to-br from-card to-muted/30">
-              <CardHeader>
-                <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-full w-fit">
-                  {partner.icon}
-                </div>
-                <CardTitle className="text-xl font-bold text-foreground">
-                  {partner.name}
-                </CardTitle>
-                <Badge variant="secondary" className="mx-auto">
-                  {partner.role}
-                </Badge>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  {partner.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+     
+       {/* Countries Representation */}
+       <CountryFlags /> 
+       
 
         {/* Security Notice */}
         <div className="mt-16 text-center">

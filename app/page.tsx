@@ -1,14 +1,13 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Statistics from "@/components/Statistics";
 import Governance from "@/components/Governance";
 import About from "@/components/About";
 import Logistics from "@/components/Logistics";
+import RouteVisualization from "@/components/RouteVisualization";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Navbar />
       <Hero />
       <div id="statistics">
         <Statistics />
@@ -21,6 +20,9 @@ export default function Home() {
       </div>
       <div id="logistics">
         <Logistics />
+      </div>
+      <div id="route-visualization">
+        <RouteVisualization />
       </div>
     </div>
   );

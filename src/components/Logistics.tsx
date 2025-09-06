@@ -2,12 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Train, MapPin, CheckCircle, Truck } from "lucide-react";
 
+
+
 const Logistics = () => {
   const logisticsFeatures = [
     {
       icon: <Train className="w-8 h-8 text-primary" />,
       title: "Transporte Ferroviário Prioritário",
-      description: "Corredor de Lobito como via principal de escoamento",
+      description: "Corredor de Lobito como via principal de escoamento Conectando o interior de África aos portos do Atlântico através de uma infraestrutura moderna e eficiente.",
       status: "Ativo"
     },
     {
@@ -49,7 +51,7 @@ const Logistics = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
+          <Badge className="mb-4 bg-primary/5 text-primary border-primary/20">
             <Train className="w-4 h-4 mr-2" />
             Logística Integrada
           </Badge>
@@ -89,34 +91,10 @@ const Logistics = () => {
           ))}
         </div>
 
-        {/* Railway Route Visualization */}
-        <div className="bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 border border-primary/20 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-center text-foreground mb-8">
-            Rota do Corredor de Lobito
-          </h3>
-          <div className="flex items-center justify-between max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-3 mx-auto">
-                <MapPin className="w-8 h-8 text-white" />
-              </div>
-              <p className="font-semibold text-foreground">Katanga</p>
-              <p className="text-sm text-muted-foreground">RDC</p>
-            </div>
-            
-            <div className="flex-1 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-4 rounded-full relative">
-              <Train className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-8 h-8 text-primary bg-white rounded-full p-1" />
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-3 mx-auto">
-                <MapPin className="w-8 h-8 text-white" />
-              </div>
-              <p className="font-semibold text-foreground">Lobito</p>
-              <p className="text-sm text-muted-foreground">Angola</p>
-            </div>
-          </div>
-        </div>
+      
       </div>
+      
+     
     </section>
   );
 };

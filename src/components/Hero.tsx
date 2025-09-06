@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 import heroImage from "@/assets/hero-corredor-lobito.jpg";
 import { TrendingUp, Shield, Train } from "lucide-react";
 
@@ -36,14 +37,6 @@ const Hero = () => {
               <TrendingUp className="w-5 h-5 mr-2" />
               Preços acordados pelos Estados
             </Badge>
-            <Badge variant="secondary" className="px-6 py-3 text-base bg-white/20 text-white border-white/30 hover:bg-white/30 transition-all duration-300">
-              <Shield className="w-5 h-5 mr-2" />
-              USD indexado
-            </Badge>
-            <Badge variant="secondary" className="px-6 py-3 text-base bg-white/20 text-white border-white/30 hover:bg-white/30 transition-all duration-300">
-              <Train className="w-5 h-5 mr-2" />
-              Transporte ferroviário integrado
-            </Badge>
           </div>
           
           {/* CTAs */}
@@ -54,13 +47,15 @@ const Hero = () => {
             >
               Solicitar Acesso
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="px-8 py-4 text-lg font-semibold border-white text-white hover:bg-white hover:text-primary transition-all duration-300"
-            >
-              Estatísticas Públicas
-            </Button>
+            <Link href="/estatisticas">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="px-8 py-4 text-lg font-semibold border-white text-primary hover:bg-white hover:text-primary transition-all duration-300"
+              >
+                Estatísticas Públicas
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
